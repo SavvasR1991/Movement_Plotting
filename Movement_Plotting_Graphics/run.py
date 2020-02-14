@@ -7,6 +7,8 @@ class bcolors:
     OKBLUE = '\033[94m'
     BOLD = '\033[1m'
     ENDC = '\033[0m'
+os.system("cd Source && python3 main.py")
+exit()
 
 Packages = ["math","matplotlib","numpy","random","json","scipy","datetime","urllib3"]
 Files = ["Input/input.txt", "Source/operations_Functions.py", "Source/data_Creator.py", "Source/main.py", "Source/simulator.py"]
@@ -40,7 +42,7 @@ for files in Files:
 
 if check == True:
     print("\n"+bcolors.PASS +"Start simulation\n"+ bcolors.ENDC)
-    os.system("cd Source && python3.7 main.py")
+
 else:
     print("\n"+bcolors.FAIL +"Please install required packages and modules"+ bcolors.ENDC)
       
