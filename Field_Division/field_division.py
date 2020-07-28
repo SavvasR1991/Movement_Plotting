@@ -107,17 +107,18 @@ def main():
     #For 2d grid just set NW_z == SE_z
     NW_x = 3
     NW_y = 3
-    NW_z = 3 
+    NW_z = 30
 
-    SE_x_up = 50
-    SE_y_up = -50
+    SE_x_up = 10
+    SE_y_up = 10
     SE_z_up = 30
 
     factor_x = 3
-    factor_y = 3
-    factor_z = 2
+    factor_y = 4
+    factor_z = 16
 
     t = create_grid(NW_x, NW_y, NW_z, SE_x_up, SE_y_up, SE_z_up, factor_x, factor_y, factor_z) 
+    print(t)
     plot_graph(t,NW_z)
 
 if __name__ == "__main__":
